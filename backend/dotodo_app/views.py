@@ -6,10 +6,10 @@ from .serializers import *
 #viewsets will handle incoming requests from the client, process them and send JSON requests
 #handles list, create, detail, update, partial update, delete
 class TaskListViewSet(ModelViewSet):
-    queryset = TaskList.objects.all
+    queryset = TaskList.objects.all()
     serializer_class = TaskListSerializer
 
 class TaskViewSet(ModelViewSet):
-    queryset = Task.objects.all
+    queryset = Task.objects.all()
     serializer_class = TaskSerializer
 

@@ -10,7 +10,7 @@ class TaskListSerializer(serializers.ModelSerializer):
     #SerialzerMethodField()..this means my data value will come from a method (function)
 
     def get_all_done(self, instance): #must be named get_(whatever)
-        return instance.get_all_tasks_completed()
+        return instance.get_all_tasks_complete()
 
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:
