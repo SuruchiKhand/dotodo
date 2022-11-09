@@ -1,6 +1,7 @@
 # dotodo
 
 Backend
+
 Steps: cd backend after making backend folder
 python -m venv .venv
 source .venv/bin/activate
@@ -13,4 +14,4 @@ in project settings, add installed apps and database name
 python manage.py migrate
 python manage.py runserver
 make models, python manage.py makemigrations
-ython manage.py migrate
+python manage.py migrate
